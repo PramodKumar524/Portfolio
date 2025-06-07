@@ -1,60 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pramod Kumar R | Portfolio</title>
+  
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Google Fonts example -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
 </head>
-
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/logo.jpg" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-text">
-                <p>Software Engineer</p>
-                <h1>Hi, I'm <span>Pramod Kumar R</span><br>From Doddaballupur</h1>
-
-            </div>
-        </div>
+  <!-- Header Section -->
+  <header id="header" class="d-flex align-items-center justify-content-center text-center" style="height: 100vh; background: url('images/background.jpg') no-repeat center center/cover;">
+    <div class="container">
+      <h1 class="text-white display-4">Pramod Kumar R</h1>
+      <p class="lead text-white">Aspiring Software Engineer | Full Stack Developer</p>
+      <a href="#about" class="btn btn-primary mt-3">View More</a>
     </div>
-    <!-- <-------------about-------------->
-    <div id="about">
-        <div class="container">
-            <div id="row">
-                <div class="about-col-1">
-                    <!-- <img src="images/pramod.jpg"> -->
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Nobis aliquid, distinctio maxime error animi eum ratione 
-                        dolore. Iure consequatur aliquid voluptatem. Eum 
-                        quibusdam harum amet voluptas, obcaecati sunt eveniet 
-                        assumenda, est ut nostrum atque perspiciatis temporibus 
-                        quam doloremque. Dolore fugit velit laboriosam animi eius 
-                        obcaecati quas sit officia suscipit cupiditate.</p>
+  </header>
 
-                        <div class="tab-titles">
-                            <p class="tab-links">Skills</p>
-                            <p class="tab-links">Expierence</p>
-                            <p class="tab-links">Education</p>
-                        </div>
-                </div>
-            </div>
-        </div>
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-dark text-white">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm Pramod Kumar, a passionate software developer with skills in Java, HTML, CSS, JavaScript, and SQL.
+        I enjoy building responsive and user-friendly web applications. Currently, I'm honing my full stack development skills and working on exciting projects.
+      </p>
     </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Projects</h2>
+      <div class="row">
+        <!-- Project Card 1 -->
+        <div class="col-md-4 d-flex">
+          <div class="card h-100 w-100">
+            <img src="images/library.png" class="card-img-top"/>>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Library Management System</h5>
+              <p class="card-text flex-grow-1">A console-based Java application implementing CRUD operations to manage books and users efficiently.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Project Card 2 -->
+        <div class="col-md-4 d-flex">
+          <div class="card h-100 w-100">
+            <img src="images/portfolio.png" class="card-img-top" />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Portfolio Website</h5>
+              <p class="card-text flex-grow-1">A responsive portfolio website built with HTML, CSS, and Bootstrap to showcase skills and projects.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add more project cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-dark text-white">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out to me via email or LinkedIn.</p>
+      <ul>
+        <li>Email: <a href="mailto:pramodkumarraj129@gmail.com" class="text-white">pramodkumarraj129@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/pramodkumarr129" target="_blank" class="text-white">linkedin.com/in/pramodkumarr129</a></li>
+        <li>Phone Numner: 9980235247</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-3 bg-secondary text-white">
+    <p>&copy; 2025 Pramod Kumar R. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS Bundle CDN (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
